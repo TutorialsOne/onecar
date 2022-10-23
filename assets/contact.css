@@ -1,0 +1,151 @@
+:root {
+    --text: #ffb400;
+    --white: #ffffff;
+}
+
+.silde_contact {
+    background: rgba(0, 0, 0, 0.04) url(./img/bg_slider_about_2.jpg) top left repeat;
+    background-size: cover;
+    height: 420px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.silde_contact .content_slider{
+    position: absolute;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 49%;
+    right: 0;
+    left: 0;
+}
+.content_slider h2 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 55px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.contact h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    font-size: 33px;
+    font-weight: 600;
+}
+.contact-item {
+    margin-top: 40px;
+    height: 20vh;
+}
+
+.contact-item ul {
+    list-style: none;
+}
+
+.contact-item ul li {
+    display: flex;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+}
+
+.contact-item h4 {
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0 0 5px;
+}
+
+.contact-item p {
+    font-size: 16px;
+    color: #5a5959;
+    margin-bottom: 0;
+    line-height: 25px;
+}
+
+.contact-item ion-icon{
+    padding-right: 5px;
+    font-size: 30px;
+    color: var(--text);
+    transform: translateY(-88%);
+}
+.contact-us{
+    color:rgb(38, 94, 129);
+    width: 45%;
+}
+
+
+/* send */
+.contact_send {
+    margin-top: 50px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+
+
+.contact_send {
+    background-color: rgba(0, 0, 0, 0.04);
+    
+}
+
+.contact_send h2, .contact_send p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_send h2 {
+    padding-top: 20px;
+    font-size: 33px;
+    font-weight: 600;
+
+}
+
+.contact_send p {
+    padding-bottom: 20px;
+}
+
+.contact_send-input {
+    margin-top: 20px;
+    width: 1000px;
+    margin: 0 auto;
+}
+.contact_send-input input {
+    display: block;
+    width: 100%;
+    line-height: 40px;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    padding-left: 15px;
+    border-radius: 1px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.contact_send-submit {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_send-submit input {
+    padding: 10px 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    background: var(--text);
+    color: #ffffff;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+.contact_send-submit:hover input {
+    background-color: #fff;
+    transition: 0.5s ease;
+    color: var(--text);
+    cursor: pointer;
+}

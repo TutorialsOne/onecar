@@ -1,0 +1,150 @@
+:root {
+    --text: #ffb400;
+    --white: #ffffff;
+    --bg: #ffb400;
+}
+.info-car {
+   margin-top: 40px;
+    background: #fff;
+    min-height: 100vh;
+}
+
+.header-title__heading {
+    font-size: 30px;
+}
+.header-title__evaluate {
+    display: flex;
+    float: left;
+    padding-top: 10px;
+    font-size: 12px;
+}
+
+.header-title__evaluate .star{
+    margin-right: 10px;
+    color: #D5D5D5;
+}
+
+.header-title__evaluate h3{
+    padding: 0 10px;
+    border-left: 1px solid #000;
+    color: var(--text);
+}
+.star-active {
+    color: var(--text);
+}
+/* info */
+.buy-infoCar {
+    
+}
+
+.buy-infoCar__img img{
+    display: flex;
+    float: right;
+    width: 50%;
+}
+.buy-infoCar__par {
+    display: flex;
+    float: right;
+    margin-top: -80px;
+}
+
+.buy-infoCar__par ul {
+    list-style: none;
+}
+
+.buy-infoCar__par-item {
+    display: inline-block;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 2px;
+    padding: 10px 10px;
+    margin-right: 30px;
+}
+.buy-infoCar__par-item:hover {
+    opacity: 0.6;
+    transition: 0.1s;
+    cursor: pointer;
+}
+.buy-infoCar__par-item ion-icon {
+    font-size: 20px;
+}
+/* det */
+.buy-infoCar__select {
+    margin-top: 75px;
+    background: #D5D5D5;
+    display: flow-root;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 4px;
+    
+}
+
+.buy-infoCar__select-detail {
+    color: #fff;
+    background: var(--bg);
+    font-size: 20px;
+    line-height: 30px;
+    padding-left: 10px;
+    font-weight: 700;
+
+}
+
+.buy-infoCar__select-list ul {
+    list-style: none;
+}
+.buy-infoCar__select-item {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    
+}
+.buy-infoCar__select-item h4 {
+    display: flex;
+    float: right;
+    line-height: 15px;
+}
+
+
+
+.buy-infoCar__btn-buy {
+    padding: 10px;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+    background-color: var(--bg);
+    border-radius: 4px;
+    margin-top: 10px;
+    transition: 0.5s ease;
+}
+.buy-infoCar__btn-buy:hover {
+    background-color: #fff;
+    transition: 0.5s ease;
+    color: var(--text);
+    cursor: pointer;
+}
+/* Product - info */
+.product_info {
+    padding-bottom: 40px;
+}
+.product_info-heading {
+    margin-top: 30px;
+    background-color: rgba(0,0,0,0.08);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 40px;
+    padding-left: 10px;
+}
+
+.product_info-section {
+    padding: 10px;
+}
+
+.product_info-section h3 {
+    padding-top: 20px;
+}
+.product_info-section p {
+    padding-top: 10px;
+    font-size: 16px;
+   text-align: justify;
+}
+

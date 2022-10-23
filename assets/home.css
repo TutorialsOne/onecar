@@ -1,0 +1,500 @@
+:root {
+    --text: #ffb400;
+    --white: #ffffff;
+  }
+
+.scroll {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    transition: 0.5s ease;
+}
+
+.scroll_st {
+    scroll-snap-align: start;
+}
+
+.slider {
+    position: relative;
+}
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.bg_slider {
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 100vh;
+    
+    
+}
+
+#background-video {
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%);
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+.slider_content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.slider_content h1 {
+    font-size: 50px;
+    margin-top: 80px;
+    text-transform: uppercase;
+}
+
+.slider_content .par {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+.slider_content .btn_buy {
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #ffffff;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.5s ease;
+    
+}
+
+.btn_buy a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.5s ease;
+}
+.btn_buy:hover {
+    border: 2px solid var(--text);
+    color: var(--text);
+    transition: 0.5s ease;
+
+}
+
+.btn_buy:hover a {
+    color: var(--text);
+    transition: 0.5s ease;
+}
+/*  FEATURE CAR */
+#content_frist {
+    background: #fff;
+    min-height: 140vh;
+
+}
+.content_section{
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content_heading{
+    color: #000;
+
+}
+
+.content_sub_heading{
+    padding: 20px 0;
+    text-align: center;
+    padding-top: 74px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+
+}
+.content p{
+    text-align: justify;
+    line-height: 1.4;
+    width: 800px;
+    
+}
+
+
+/* info */
+.car_box {
+    padding-top: 60px;
+    width: 1200px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.car_box a {
+    text-decoration: none;
+}
+.car_box-img {
+    border-radius: 3px;
+    display: flex;
+    z-index: 0;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    width: 375px;
+    height: 275px;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px rgba(0,0,0,0.3);
+    transform: translate(0,0);
+    transition: 0.3s;
+    background: linear-gradient(to top,rgb(47 45 45 / 99%) 0%,rgb(0 0 0 / 51%) 35%,rgba(2, 2, 2, 0) 60%,rgba(0,0,0,0) 100%);
+}
+
+.img-one {
+    background-image: url(./img/porsche.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.img-two {
+    background-image: url(./img/bmw\ e64.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.img-three {
+    background-image: url(./img/lambo.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.img-four {
+    background-image: url(./img/volk.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.img-five {
+    background-image: url(./img/lexus\ gs.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.img-six {
+    background-image: url(./img/fera\ red.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+.img-text {
+    background: linear-gradient(to top,rgb(47 45 45 / 43%) 0%,rgb(0 0 0 / 69%) 46%,rgba(2, 2, 2, 0) 144%,rgba(0,0,0,0) 52%);
+    padding: 0 15px 10px 15px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    transform: translateY(50px);
+    line-height: 25px;
+    transition: 0.5s ease;
+    display: inline-block;
+    text-align: left;
+    color: #fff;
+}
+
+.img-text h4{
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.img-text ul {
+    list-style: none;
+}
+
+.img-text ul li {
+    font-size: 14px;
+    font-weight: 400;
+    display: inline-block;
+    padding-right: 20px;
+
+}
+
+.img-text strong {
+    padding-right: 5px;
+}
+
+.car_box-img:hover .img-text {
+    transform: translateY(0);
+}
+
+.car_box-img:hover .img-text h4 {
+    color: var(--text);
+}
+
+.img-text button {
+    border: none;
+    background-color: #fff;
+    color: var(--text);
+    padding: 10px 20px;
+    border-radius: 2px;
+    margin-top: 10px;
+    transition: 0.5s ease;
+    font-weight: 600;
+
+}
+
+.img-text button:hover {
+    cursor: pointer;
+    color: #fff;
+    background: var(--text);
+    transition: 0.5s ease;
+
+}
+
+
+
+/* BRAND */
+#content_second {
+    background-color: #F6F6F7;
+    height: 120vh;
+    position: relative;
+}
+#content_second h2 {
+    color: #1A1A1A;
+    font-size: 48px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+.box_brand{
+    width: 100%;
+    justify-content: center;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: 150px 150px 150px 150px 150px 150px;
+    grid-template-rows: 150px 150px;
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;
+    
+    
+ }
+ .item_brand {
+    transition: transform 500ms ease;
+ }
+.item_brand:hover {
+    transform: scale(1.15);
+}
+.item_brand img {
+    width: 150px;
+    height: 115px;
+    border-radius: 6px;
+    
+}
+.item_brand p{
+    
+} 
+.img_brand {
+    
+}
+.name_brand {
+    color: #1A1A1A;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.content_second-banner img {
+    width: 100%;
+}
+/* #check {
+    
+}
+.view-more {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    color: #fff;
+    text-decoration: underline;
+    cursor: pointer;
+    font-weight: 600;
+}
+#check:checked ~.view-more {
+    display: block;
+} */
+/* LATEST CAR UPDATE */
+#content_third {
+    background-color: #fff;
+    min-height: 109vh;
+}
+
+.swiper { 
+    width: 1200px;
+    margin-top: 50px;
+}
+
+
+.box_car {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    transition: transform 500ms ease;
+    z-index: -1;
+}
+
+
+.box_car-item {
+    margin: 0 auto;
+    width: 360px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    border-radius: 1px;
+    position: relative;
+    transition: transform 500ms ease;
+}
+
+.box_car-item:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    bottom: 0;
+    transition: height 0.5s ease-out;
+    background: linear-gradient(to top, rgba(0, 42, 104, 0.2) 0%, rgba(5, 49, 99, 0.2) 15%, rgba(6, 208, 248, 0.2) 100%);
+    transition: 0.5s;
+
+}
+.box_car-item:hover:before{
+    height: 100%;
+    cursor: pointer;
+    
+}
+.box_car-item:hover {
+    transform: translateY(-5px);
+    transition: 0.5s ease-in-out;
+}
+
+.box_car-item img {
+    width: 360px;
+    max-width: 100%;
+    height: 300px;
+    display: block;
+    border-bottom: none;
+}
+.box_car-info {
+    padding: 10px;
+    padding-bottom: 15px;
+}
+
+.box_car-info p {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+.box_car-info .by {
+    display: flex;
+    float: left;
+}
+.time {
+    display: flex;
+    float: right;
+    right: 0;
+}
+.title-review {
+    text-decoration: none;
+    color: #000;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.box_car-info .author {
+    color: #000;
+}
+
+.box_run {
+    font-size: 40px;
+}
+
+/*  SUBSCRIB*/
+
+.content_fourth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f3f3;
+    min-height: 60vh;
+}
+
+
+
+/* sub */
+.subscribe {
+    text-align: center;
+    color: #000;
+    
+}
+.subscribe h2 {
+    font-size: 70px;
+    font-weight: 800;
+    
+}
+.subscribe p {
+    font-size: 25px;
+    margin-top: 40px;
+}
+
+.email {
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.email .email_icon{
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    font-weight: 600;
+    padding-left: 8px;
+    line-height: 40px;
+    color: var(--text);
+
+}
+.email_In , .email_btn {
+    border: none;
+    outline: none;
+}
+.email:hover > .email_In, .email_In:focus {
+    width: 260px;
+    padding: 0 10px;
+    transition: 0.5s;
+}
+.email_In {
+    transition: 0.5s;
+    width: 0;
+}
+.email_btn {
+    background: rgb(255, 255, 255);
+    padding: 0 10px;
+    color: #000;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+/* FOOTER */
